@@ -34,22 +34,17 @@ export async function registerPatient(prevState: any, formData: FormData) {
   const { name, age, symptoms } = validatedFields.data;
 
   try {
-    // --- TEMPORARY WORKAROUND: Using mock data instead of AI calls ---
-    const triageResult = {
-      urgency: 'medium' as const,
-      department: 'General Medicine',
-      reason: 'AI systems bypassed for testing. Symptoms indicate a need for general consultation.',
-    };
-
-    const allocationResult = {
-      tokenNumber: Math.floor(Math.random() * 100) + 1,
-      timeWindowStart: '10:00 AM',
-      timeWindowEnd: '10:30 AM',
-      estimatedWaitTime: '15 minutes',
-      department: 'General Medicine', // Ensure this is consistent
-    };
-    // --- END OF TEMPORARY WORKAROUND ---
-
+    const triageResult = await patientTriage({ age, symptoms });
+    
+    const allocationResult = await allocateTokenAndTime({
+      patientId: name, // Using name as a temporary ID
+      age,
+      symptoms,
+      opdLoad: 'Medium', // Example data
+      doctorAvailability: 'Available', // Example data
+      priority: triageResult.urgency,
+    });
+    
     const appointmentDetails: AppointmentDetails = {
       patientName: name,
       ...triageResult,

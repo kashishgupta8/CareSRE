@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { useFormStatus } from 'react-dom';
+import { useActionState } from 'react';
 import { registerPatient } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { Loader2 } from 'lucide-react';
+import { useFormStatus } from 'react-dom';
 
 const initialState = {
   message: null,
@@ -36,7 +37,7 @@ function SubmitButton() {
 }
 
 export function PatientRegistrationForm() {
-  const [state, formAction] = React.useActionState(registerPatient, initialState);
+  const [state, formAction] = useActionState(registerPatient, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
