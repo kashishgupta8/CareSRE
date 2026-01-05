@@ -41,7 +41,7 @@ export function PatientRegistrationForm() {
   const { toast } = useToast();
 
   useEffect(() => {
-    if (state.message) {
+    if (state?.message) {
       toast({
         variant: 'destructive',
         title: 'Registration Failed',

@@ -30,9 +30,32 @@ export async function registerPatient(prevState: any, formData: FormData) {
       message: 'Error: Please check the form fields.',
     };
   }
+  
+  const { name } = validatedFields.data;
 
-  const { name, age, symptoms } = validatedFields.data;
+  // --- TEMPORARY WORKAROUND ---
+  // Bypassing AI calls and using mock data to proceed to the next step.
+  const appointmentDetails: AppointmentDetails = {
+    patientName: name,
+    urgency: 'medium',
+    department: 'General Medicine',
+    reason: 'This is a temporary assessment for UI development.',
+    tokenNumber: 123,
+    timeWindowStart: '10:00 AM',
+    timeWindowEnd: '10:30 AM',
+    estimatedWaitTime: '15 minutes',
+  };
 
+  const params = new URLSearchParams();
+  Object.entries(appointmentDetails).forEach(([key, value]) => {
+    params.append(key, String(value));
+  });
+
+  redirect(`/patient/appointment?${params.toString()}`);
+  // --- END OF TEMPORARY WORKAROUND ---
+
+  /*
+  // Original code with AI calls - temporarily disabled
   try {
     const triageResult = await patientTriage({ age, symptoms });
     
@@ -64,6 +87,7 @@ export async function registerPatient(prevState: any, formData: FormData) {
       message: 'An unexpected error occurred. Our AI systems may be busy. Please try again later.',
     };
   }
+  */
 }
 
 const CrowdPredictionSchema = z.object({
