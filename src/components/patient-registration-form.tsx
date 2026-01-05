@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useActionState } from 'react';
+import React from 'react';
 import { useFormStatus } from 'react-dom';
 import { registerPatient } from '@/app/actions';
 import { Button } from '@/components/ui/button';
@@ -36,7 +36,7 @@ function SubmitButton() {
 }
 
 export function PatientRegistrationForm() {
-  const [state, formAction] = useActionState(registerPatient, initialState);
+  const [state, formAction] = React.useActionState(registerPatient, initialState);
   const { toast } = useToast();
 
   useEffect(() => {
