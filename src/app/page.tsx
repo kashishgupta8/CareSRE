@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowRight, Bot, Clock, Users } from 'lucide-react';
 import { Logo } from '@/components/ui/logo';
+import { Wordmark } from '@/components/ui/wordmark';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
@@ -35,8 +36,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center">
           <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-            <Logo className="w-8 h-8 text-primary" />
-            <span className="font-headline text-2xl">CareSRE</span>
+            <Logo className="w-8 h-8" />
+            <Wordmark className="h-7" />
           </Link>
           <nav className="ml-auto hidden md:flex gap-6 text-sm font-medium">
              <Link href="#features" className="text-muted-foreground hover:text-foreground">Features</Link>
@@ -152,7 +153,7 @@ export default function Home() {
         <div className="container text-center text-muted-foreground flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center gap-2 font-bold text-lg">
               <Logo className="w-6 h-6 text-primary" />
-              <span className="font-headline text-xl">CareSRE</span>
+              <Wordmark className="h-5" />
           </div>
           <p className="text-sm mt-4 md:mt-0">&copy; {new Date().getFullYear()} CareSRE. All rights reserved.</p>
         </div>

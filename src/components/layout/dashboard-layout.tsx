@@ -12,6 +12,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Logo } from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
+import { Wordmark } from "../ui/wordmark";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -26,8 +27,8 @@ export function DashboardLayout({ children, title, navItems }: DashboardLayoutPr
         <div className="flex h-full max-h-screen flex-col gap-2">
           <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <Logo className="h-6 w-6 text-primary" />
-              <span className="font-headline">CareSRE</span>
+              <Logo className="h-6 w-6" />
+              <Wordmark className="h-6" />
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
               <Bell className="h-4 w-4" />
@@ -73,8 +74,8 @@ export function DashboardLayout({ children, title, navItems }: DashboardLayoutPr
                   href="/"
                   className="flex items-center gap-2 text-lg font-semibold mb-4"
                 >
-                  <Logo className="h-6 w-6 text-primary" />
-                  <span className="font-headline">CareSRE</span>
+                  <Logo className="h-6 w-6" />
+                  <Wordmark className="h-6" />
                 </Link>
                 {navItems.map((item) => (
                   <Link
