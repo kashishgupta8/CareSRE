@@ -8,7 +8,6 @@ export default function GatewayPage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#0A192F] text-slate-100 p-4">
       <div className="text-center flex flex-col items-center">
-        <Logo className="h-20 w-20 mb-4" />
         <Wordmark className="h-24 w-auto mb-2" />
 
         <h1 className="text-2xl font-bold tracking-tight font-headline sm:text-3xl md:text-4xl text-slate-300 mt-2">
