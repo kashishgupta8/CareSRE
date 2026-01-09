@@ -1,10 +1,11 @@
-CareSRE
-An AI-Powered Multi-Agent System for Intelligent Hospital Workflow Management
+#CareSRE
+
+##An AI-Powered Multi-Agent System for Intelligent Hospital Workflow Management
 Problem Statement
 
 Hospitals, especially OPDs, face persistent operational challenges that directly affect quality of care and patient experience.
 
-Key problems:
+#Key problems:
 
 Long and unmanaged patient queues
 
@@ -19,7 +20,7 @@ High administrative overhead
 Most existing Hospital Management Systems act as passive record systems and do not provide real-time, intelligent decision support.
 CareSRE addresses this gap by introducing an AI-driven, agent-based decision-support system that improves efficiency without replacing human clinicians.
 
-🤖 Why Agents?
+#🤖 Why Agents?
 
 Healthcare workflows are inherently multi-role and dynamic. A single monolithic AI model cannot handle intake, triage, alerts, summarization, and administration reliably.
 
@@ -35,7 +36,7 @@ Reflecting real hospital operational structure
 
 Each agent in CareSRE does one job only, but together they create a coordinated and scalable system.
 
-🏗️ What I Built — Architecture Overview
+#🏗️ What I Built — Architecture Overview
 
 CareSRE is built as a multi-agent orchestration layer on top of a standard hospital workflow.
 
@@ -139,7 +140,7 @@ Modular and scalable
 
 Easy integration with existing HMS
 
-🚀 Future Enhancements / Work in Progress
+#🚀 Future Enhancements / Work in Progress
 
 Integration with government and hospital HMS platforms
 
