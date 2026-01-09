@@ -50,7 +50,8 @@ export default function Home() {
         <section className="relative w-full py-24 md:py-32 lg:py-48">
           <div className="container relative z-10 grid md:grid-cols-2 gap-8 items-center">
             <div className="text-left">
-              <h1 className="text-4xl font-extrabold tracking-tight font-headline sm:text-5xl md:text-6xl lg:text-7xl">
+              <Wordmark className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto" />
+              <h1 className="text-2xl font-bold tracking-tight font-headline sm:text-3xl md:text-4xl text-foreground/80 mt-2">
                 The Future of Hospital Operations
               </h1>
               <p className="mt-6 max-w-2xl text-lg md:text-xl text-muted-foreground">
