@@ -21,7 +21,7 @@ export default function Home() {
     },
     {
       icon: <Clock className="w-8 h-8 text-primary" />,
-      title: 'Optimized Scheduling',
+      title: 'Online OPD Token',
       description: 'Allocate appointment slots and manage patient flow in real-time to reduce wait times.',
     },
     {
