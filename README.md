@@ -1,12 +1,13 @@
-#CareSRE
+# CareSRE
 
-##An AI-Powered Multi-Agent System for Intelligent Hospital Workflow Management
-Problem Statement
+ An AI-Powered Multi-Agent System for Intelligent Hospital Workflow Management Problem Statement
 
 Hospitals, especially OPDs, face persistent operational challenges that directly affect quality of care and patient experience.
 
-#Key problems:
 
+
+
+## Key problems:
 Long and unmanaged patient queues
 
 Manual and inconsistent triage processes
@@ -17,10 +18,8 @@ Delayed identification of critical cases
 
 High administrative overhead
 
-Most existing Hospital Management Systems act as passive record systems and do not provide real-time, intelligent decision support.
-CareSRE addresses this gap by introducing an AI-driven, agent-based decision-support system that improves efficiency without replacing human clinicians.
-
-#🤖 Why Agents?
+Most existing Hospital Management Systems act as passive record systems and do not provide real-time, intelligent decision support. CareSRE addresses this gap by introducing an AI-driven, agent-based decision-support system that improves efficiency without replacing human clinicians.
+## 🤖 Why Agents?
 
 Healthcare workflows are inherently multi-role and dynamic. A single monolithic AI model cannot handle intake, triage, alerts, summarization, and administration reliably.
 
@@ -36,8 +35,8 @@ Reflecting real hospital operational structure
 
 Each agent in CareSRE does one job only, but together they create a coordinated and scalable system.
 
-#🏗️ What I Built — Architecture Overview
 
+## 🏗️ What I Built — Architecture Overview
 CareSRE is built as a multi-agent orchestration layer on top of a standard hospital workflow.
 
 Core Agents
@@ -78,25 +77,14 @@ Reduces administrative workload
 
 All agents communicate through a shared workflow, ensuring coordination without overlap.
 
-Demo — How the Agent System Works
 
-System flow:
+## Demo — How the Agent System Works
 
-Patient registers via web, kiosk, or desk
 
-Intake Agent structures patient input
+https://youtu.be/BMP-mP9pRTI
 
-Triage Agent evaluates urgency
 
-OPD token and estimated wait time generated
-
-Doctor workload adjusted dynamically
-
-Alerts and summaries assist consultations
-
-Patient receives updates via screen or notification
-
-Results:
+## Results:
 
 Reduced waiting time
 
@@ -108,7 +96,8 @@ Smoother patient experience
 
 (Demo images / video included in the repository)
 
-🛠️ The Build — Tools, Technologies & Workflow
+
+## 🛠️ The Build — Tools, Technologies & Workflow
 
 Frontend
 
@@ -140,7 +129,8 @@ Modular and scalable
 
 Easy integration with existing HMS
 
-#🚀 Future Enhancements / Work in Progress
+
+## 🚀 Future Enhancements / Work in Progress
 
 Integration with government and hospital HMS platforms
 
@@ -152,10 +142,10 @@ Multi-language patient input
 
 Improved agent coordination and learning loops
 
-📎 Project Links
 
-GitHub Repository:
+## 📎 Project Links
 
-Demo Video / Screenshots:
+Demo Video / Screenshots: https://youtu.be/BMP-mP9pRTI
 
-Architecture Diagrams:
+MVP Link : https://caresre.netlify.app/
+
