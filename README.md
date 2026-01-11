@@ -23,7 +23,7 @@ Most existing Hospital Management Systems act as passive record systems and do n
 
 Healthcare workflows are inherently multi-role and dynamic. A single monolithic AI model cannot handle intake, triage, alerts, summarization, and administration reliably.
 
-Multi-agent systems help by:
+##Multi-agent systems help by:
 
 Assigning one clear responsibility per agent
 
