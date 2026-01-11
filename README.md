@@ -1,161 +1,42 @@
-#CareSRE
-
-##An AI-Powered Multi-Agent System for Intelligent Hospital Workflow Management
-Problem Statement
-
-Hospitals, especially OPDs, face persistent operational challenges that directly affect quality of care and patient experience.
-
-#Key problems:
-
-Long and unmanaged patient queues
-
-Manual and inconsistent triage processes
-
-Doctors overloaded with unstructured patient data
-
-Delayed identification of critical cases
-
-High administrative overhead
-
-Most existing Hospital Management Systems act as passive record systems and do not provide real-time, intelligent decision support.
-CareSRE addresses this gap by introducing an AI-driven, agent-based decision-support system that improves efficiency without replacing human clinicians.
-
-#🤖 Why Agents?
-
-Healthcare workflows are inherently multi-role and dynamic. A single monolithic AI model cannot handle intake, triage, alerts, summarization, and administration reliably.
-
-Multi-agent systems help by:
-
-Assigning one clear responsibility per agent
-
-Improving reliability and explainability
-
-Enabling parallel decision-making
-
-Reflecting real hospital operational structure
-
-Each agent in CareSRE does one job only, but together they create a coordinated and scalable system.
-
-#🏗️ What I Built — Architecture Overview
-
-CareSRE is built as a multi-agent orchestration layer on top of a standard hospital workflow.
-
+CareSRE
+AI‑Powered Multi‑Agent System for Intelligent Hospital OPD Management
+Problem
+Hospital OPDs face long queues, manual triage, overloaded doctors, and poor operational visibility.
+Most Hospital Management Systems only store data and do not support real‑time decisions.
+CareSRE adds an AI intelligence layer on top of basic hospital workflows to solve this.
+What CareSRE Does
+CareSRE uses multiple task‑specific AI agents to:
+Structure patient intake data
+Assign triage priority and OPD routing
+Generate OPD tokens with estimated wait time
+Monitor crowd load and raise alerts
+Provide admin‑level operational insights
+This improves queue control, doctor efficiency, and patient experience without replacing clinicians.
+Why Multi‑Agent AI
+Healthcare workflows are multi‑role and dynamic.
+CareSRE uses one agent per responsibility, making the system:
+Explainable
+Reliable
+Scalable
+Judge‑safe (decision‑support, not diagnosis)
 Core Agents
-
-Patient Intake Agent
-
-Converts free-text symptoms into structured medical data
-
-Normalizes real-world patient inputs
-
-Triage & Priority Agent
-
-Assesses urgency and assigns priority
-
-Supports OPD vs emergency routing
-
-Helps manage queues dynamically
-
-Medical Record Summarizer Agent
-
-Condenses long patient histories into concise summaries
-
-Reduces cognitive load for doctors
-
-Clinical Alert Agent
-
-Flags abnormal trends and critical indicators
-
-Provides early warnings with explanations
-
-Admin / Workflow Agent
-
-Suggests next operational steps
-
-Assists with documentation and discharge summaries
-
-Reduces administrative workload
-
-All agents communicate through a shared workflow, ensuring coordination without overlap.
-
-Demo — How the Agent System Works
-
-System flow:
-
-Patient registers via web, kiosk, or desk
-
-Intake Agent structures patient input
-
-Triage Agent evaluates urgency
-
-OPD token and estimated wait time generated
-
-Doctor workload adjusted dynamically
-
-Alerts and summaries assist consultations
-
-Patient receives updates via screen or notification
-
-Results:
-
-Reduced waiting time
-
-Better queue control
-
-Improved doctor efficiency
-
-Smoother patient experience
-
-(Demo images / video included in the repository)
-
-🛠️ The Build — Tools, Technologies & Workflow
-
-Frontend
-
-Web-based UI
-
-Single scrolling interface with role-based access
-
-Backend
-
-Firebase Authentication
-
-Firestore database
-
-Firebase Hosting
-
-AI Layer
-
-LLM-based agents
-
-Prompt engineering + rule-based logic
-
-No model training required
-
+Patient Intake Agent – structures free‑text symptoms
+Triage & Priority Agent – assigns urgency and department
+Token & Queue Agent – manages OPD flow and wait time
+Alert Agent – detects overloads and exceptions
+Admin Insight Agent – generates actionable summaries
+Architecture
+Frontend: Web UI (Patient / Doctor / Admin views)
+Backend: Firebase Authentication + Firestore
+AI Layer: Prompt‑based LLM agents (no model training)
 Design Principles
-
-Decision-support, not diagnosis
-
-Modular and scalable
-
+Decision‑support, not diagnosis
+Modular agent design
 Easy integration with existing HMS
-
-#🚀 Future Enhancements / Work in Progress
-
-Integration with government and hospital HMS platforms
-
-Expansion beyond OPD (diagnostics, pharmacy queues)
-
-Analytics dashboards for hospital planning
-
-Multi-language patient input
-
-Improved agent coordination and learning loops
-
-📎 Project Links
-
-GitHub Repository:
-
-Demo Video / Screenshots:
-
-Architecture Diagrams:
+Deployable MVP for public hospitals
+Future Scope
+Expansion beyond OPD (pharmacy, diagnostics)
+Analytics dashboards
+Multi‑language patient input
+Deeper agent coordination
+CareSRE is a real‑world, deployable multi‑agent AI system focused on hospital operations, not medical diagnosis.
