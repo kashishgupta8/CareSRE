@@ -107,11 +107,6 @@ https://youtu.be/uMO-Igdr5DA
 
 - Smoother patient experience
 
-(Demo images / video included in the repository)
-
-
-## 🛠️ The Build — Tools, Technologies & Workflow
-
 
 ## 🚀 Future Enhancements / Work in Progress
 
@@ -129,5 +124,6 @@ https://youtu.be/uMO-Igdr5DA
 ## 📎 Project Links
 
 Demo Video / Screenshots: https://youtu.be/uMO-Igdr5DA
+
 MVP Link : https://gdg-virid.vercel.app/
 
