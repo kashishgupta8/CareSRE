@@ -7,6 +7,10 @@
 #### An intelligent HMS + OPD system is essential to reduce operational inefficiencies, improve patient experience, and enable data-driven healthcare delivery.
 Hospitals, especially OPDs, face persistent operational challenges that directly affect quality of care and patient experience.
 
+![Next.js](https://img.shields.io/badge/Next.js-15.1-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
+![Google Gemini](https://img.shields.io/badge/AI-Gemini%201.5-4285F4?style=flat-square&logo=google)
+
 
 ## Key problems:
 - Long and unmanaged patient queues
@@ -77,7 +81,16 @@ Core Agents
 
 - All agents communicate through a shared workflow, ensuring coordination without overlap.
 
+## 🛠 Tech Stack
 
+| Layer | Technology |
+|-------|------------|
+| Framework | Next.js 15.1 |
+| UI | React 19 |
+| Styling | Vanilla CSS (custom design system) |
+| AI | Google Gemini 1.5 Flash |
+| QR Code | qrcode.react |
+| State | In-memory store |
 
 ## Demo — How the Agent System Works
 
