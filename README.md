@@ -95,8 +95,7 @@ Core Agents
 ## Demo — How the Agent System Works
 
 
-https://youtu.be/BMP-mP9pRTI
-
+https://youtu.be/uMO-Igdr5DA
 
 ## Results:
 
@@ -112,36 +111,6 @@ https://youtu.be/BMP-mP9pRTI
 
 
 ## 🛠️ The Build — Tools, Technologies & Workflow
-
-### Frontend
-
-Web-based UI
-
-Single scrolling interface with role-based access
-
-### Backend
-
-Firebase Authentication
-
-Firestore database
-
-Firebase Hosting
-
-### AI Layer
-
-LLM-based agents
-
-Prompt engineering + rule-based logic
-
-No model training required
-
-### Design Principles
-
-Decision-support, not diagnosis
-
-Modular and scalable
-
-Easy integration with existing HMS
 
 
 ## 🚀 Future Enhancements / Work in Progress
@@ -159,7 +128,6 @@ Easy integration with existing HMS
 
 ## 📎 Project Links
 
-Demo Video / Screenshots: https://youtu.be/BMP-mP9pRTI
-
+Demo Video / Screenshots: https://youtu.be/uMO-Igdr5DA
 MVP Link : https://gdg-virid.vercel.app/
 
