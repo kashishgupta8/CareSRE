@@ -148,5 +148,5 @@ Easy integration with existing HMS
 
 Demo Video / Screenshots: https://youtu.be/BMP-mP9pRTI
 
-MVP Link : https://caresre.netlify.app/
+MVP Link : https://gdg-virid.vercel.app/
 
