@@ -39,12 +39,26 @@ Healthcare workflows are inherently multi-role and dynamic. A single monolithic 
 - Enabling parallel decision-making
 
 - Reflecting real hospital operational structure
+  
+- uses Render Workflows to orchestrate the complete OPD pipeline.
+
 
 - Each agent in CareSRE does one job only, but together they create a coordinated and scalable system.
 
 
 ## 🏗️ What I Built — Architecture Overview
 CareSRE is built as a multi-agent orchestration layer on top of a standard hospital workflow.
+
+###It leverages Render Workflows to automate patient registration, AI triage, medical summarization, and real-time OPD workflow management.
+The workflow automates:
+
+• Patient Registration
+• Online Token Generation
+• AI Triage
+• Medical History Summarization
+• Doctor Dashboard Updates
+• Admin Queue Monitoring
+
 
 Core Agents
 
@@ -124,7 +138,7 @@ https://youtu.be/uMO-Igdr5DA
 
 ## 📎 Project Links
 
-Demo Video / Screenshots: https://youtu.be/uMO-Igdr5DA
+Demo Video: https://youtu.be/uMO-Igdr5DA
 
 MVP Link : https://gdg-virid.vercel.app/
 
