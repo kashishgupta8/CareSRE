@@ -49,7 +49,7 @@ Healthcare workflows are inherently multi-role and dynamic. A single monolithic 
 ## 🏗️ What I Built — Architecture Overview
 CareSRE is built as a multi-agent orchestration layer on top of a standard hospital workflow.
 
-###It leverages Render Workflows to automate patient registration, AI triage, medical summarization, and real-time OPD workflow management.
+### It leverages Render Workflows to automate patient registration, AI triage, medical summarization, and real-time OPD workflow management.
 The workflow automates:
 
 • Patient Registration
