@@ -10,6 +10,7 @@ Hospitals, especially OPDs, face persistent operational challenges that directly
 ![Next.js](https://img.shields.io/badge/Next.js-15.1-black?style=flat-square&logo=next.js)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
 ![Google Gemini](https://img.shields.io/badge/AI-Gemini%201.5-4285F4?style=flat-square&logo=google)
+![Render Workflows](https://img.shields.io/badge/Render-Workflows-00979D?style=flat-square&logo=render)
 
 
 ## Key problems:
@@ -88,7 +89,7 @@ Core Agents
 | Framework | Next.js 15.1 |
 | UI | React 19 |
 | Styling | Vanilla CSS (custom design system) |
-| AI | Google Gemini 1.5 Flash |
+| AI & Automation | Render Workflows & Google Gemini 1.5 Flash|
 | QR Code | qrcode.react |
 | State | In-memory store |
 
